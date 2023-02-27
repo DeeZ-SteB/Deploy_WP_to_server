@@ -6,7 +6,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: rsync deploy
-        uses: burnett01/rsync-deployments@5.2
+        uses: rtCamp/action-deploy-wordpress@v3
         with:
           switches: -avzr --delete
           path: .
